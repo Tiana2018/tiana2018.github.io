@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Input Groups</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!--<link rel="stylesheet" href="css/bootstrap.min.css">-->
+</head>
+<body>
+<div class="container">
+    <h2>避免使用textAres，select因为不支持</h2>
+    <div class="input-group">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Username">
+        <span class="input-group-addon">.00</span>
+    </div>
+    <div class="input-group">
+        <span class="input-group-addon">$</span>
+        <input type="text" class="form-control" placeholder="Password">
+    </div>
+    <h2>响应式布局</h2>
+    <div class="input-group input-group-lg">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Username">
+        <span class="input-group-addon">.00</span>
+    </div>
+    <div class="input-group input-group-ms">
+        <span class="input-group-addon">@</span>
+        <input type="text" class="form-control" placeholder="Username">
+        <span class="input-group-addon">.00</span>
+    </div>
+    <h2></h2>
+    <div class="row">
+        <div class="col-lg-3">
+            <div class="input-group input-group-ms">
+                <span class="input-group-addon"><input type="checkbox"></span>
+                <input type="text" class="form-control" placeholder="Username">
+                <span class="input-group-addon">.00</span>
+            </div>
+        </div>
+        <div class="col-lg-5">
+            <div class="input-group">
+            <div class="input-group-btn">
+                <button type="button" class="btn btn-default dropdown-toggle" type="button" data-toggle="dropdown">Action <span class="caret"></span> </button>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">hello</a></li>
+                        <li><a href="#">hello</a></li>
+                        <li><a href="#">hello</a></li>
+                    </ul>
+            </div>
+            <input type="text" placeholder="Hello World!"class="form-control">
+            </div>
+        </div>
+    </div>
+    <div class="input-group"></div>
+</div>
+
+<script src="js/jquery-3.4.1.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
